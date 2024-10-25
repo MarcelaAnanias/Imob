@@ -21,6 +21,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 .paddings {
   padding: 1.5rem;
 }
@@ -69,7 +70,7 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
+  color: rgb(31, 62, 114);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -78,6 +79,7 @@ a {
   color: rgb(140 139 139);
   font-size: 0.9rem;
 }
+
 .orangeText {
   color: orange;
   font-size: 1.5rem;
