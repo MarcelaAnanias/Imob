@@ -6,15 +6,17 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
     AccordionItemState,
-  } from "react-accessible-accordion";
-  import "react-accessible-accordion/dist/fancy-example.css";
+  } from "react-accessible-accordion";// Importa componentes do "react-accessible-accordion" que ajudam a criar um accordion acessível.
+  
+  import "react-accessible-accordion/dist/fancy-example.css"; // Importa o CSS para estilizar o accordion.
   import {
-    MdOutlineArrowDropDown,
+    MdOutlineArrowDropDown, //Icones
     MdOutlineArrowDropDownCircle,
   } from "react-icons/md";
+  
   import data from "../../utils/accordion.jsx";
   import "./Value.css";
-  // Demo styles, see 'Styles' section below for some notes on use.
+
   
   const Value = () => {
     return (
@@ -41,8 +43,8 @@ import {
   
             <Accordion
               className="accordion"
-              allowMultipleExpanded={false}
-              preExpanded={[0]}
+              allowMultipleExpanded={false} // Permite que apenas um item do accordion seja expandido por vez.
+              preExpanded={[0]} //Define qual vai ser
             >
               {data.map((item, i) => {
                 const [className, setClassName] = useState(null);
@@ -50,7 +52,7 @@ import {
                   <AccordionItem className={`accordionItem ${className}`} uuid={i} key={i}>
                     <AccordionItemHeading>
                       <AccordionItemButton className="flexCenter accordionButton ">
-                          {/* just for getting state of item */}
+
                         <AccordionItemState>
                           {({ expanded }) =>
                             expanded
