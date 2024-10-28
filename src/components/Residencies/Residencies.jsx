@@ -14,6 +14,7 @@ const Residencies = () => {
                 <span className='primaryText'>Popular Residences</span>
             </div>
             <Swiper {...sliderSettings}>
+                <SliderButtons/>
                 {
                     data.map((card, i) => (
                         <SwiperSlide kay={i}>
@@ -38,3 +39,13 @@ const Residencies = () => {
 }
 
 export default Residencies
+
+const SliderButtons = () => { 
+    const swiper = useSwiper ();//função que muda os slides
+    return (
+        <div className="flexCenter r-button">
+            <input type="button" value="&lt;" onClick={() => swiper.slidePrev()}/>
+            <input type="button" value="&gt;" onClick={() => swiper.slideNext()}/>
+        </div>
+    )
+}
