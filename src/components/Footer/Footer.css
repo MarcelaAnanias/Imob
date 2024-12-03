@@ -10,4 +10,9 @@
     gap: 1.5rem;
     margin-top: 1rem;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.f-menu:hover{
+    color: rgb(140 139 139);
 }

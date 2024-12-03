@@ -21,8 +21,8 @@ function App() {
       <Value />
       <Contact />
       <GetStarted />
-      <Footer />
-    </div>
+      <Footer /> 
+    </div> 
   );
 }
 
