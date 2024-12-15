@@ -1,4 +1,7 @@
 .h-wrapper{
+    z-index: 99;
+    position: sticky;
+    top: 0;
     color: var(--white);
 }
 
