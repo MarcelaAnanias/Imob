@@ -32,20 +32,6 @@ Interactive menu with outside click handling.
 
 Modern and minimalist design.
 
-## Project Structure
-
-The project follows a simple and intuitive organization:
-
-Homyz/
-├── public/         # Static assets (logo, images)
-├── src/
-│   ├── components/  # Reusable React components
-│   ├── styles/      # CSS Modules files
-│   ├── App.jsx       # Main component
-│   └── main.jsx      # React entry point
-├── package.json   # Dependencies and scripts
-└── README.md     # Project documentation
-
 ## Installation and Usage
 
 Follow the steps below to run the project locally:
